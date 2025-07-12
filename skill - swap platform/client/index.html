@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Swap Platform - Profile Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Skill Swap Platform</h1>
+        <h2>Create Your Profile</h2>
+        
+        <form id="profileForm" class="profile-form">
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location *</label>
+                <input type="text" id="location" name="location" required placeholder="Enter your city or area">
+            </div>
+
+            <div class="form-group">
+                <label for="profilePhoto">Profile Photo URL</label>
+                <input type="url" id="profilePhoto" name="profilePhoto" placeholder="https://example.com/photo.jpg">
+                <small>Enter a URL to your profile photo</small>
+            </div>
+
+            <div class="form-group">
+                <label for="skillsOffered">Skills Offered *</label>
+                <textarea id="skillsOffered" name="skillsOffered" required placeholder="List the skills you can offer (e.g., Web Development, Cooking, Guitar Lessons, etc.)"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="skillsWanted">Skills Wanted *</label>
+                <textarea id="skillsWanted" name="skillsWanted" required placeholder="List the skills you want to learn (e.g., Spanish, Photography, Yoga, etc.)"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="availability">Availability *</label>
+                <select id="availability" name="availability" required>
+                    <option value="">Select your availability</option>
+                    <option value="weekdays">Weekdays</option>
+                    <option value="weekends">Weekends</option>
+                    <option value="evenings">Evenings</option>
+                    <option value="mornings">Mornings</option>
+                    <option value="flexible">Flexible</option>
+                    <option value="weekdays-evenings">Weekdays & Evenings</option>
+                    <option value="weekends-mornings">Weekends & Mornings</option>
+                </select>
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="makePublic" name="makePublic">
+                    <span class="checkmark"></span>
+                    Make Public
+                </label>
+                <small>Check this box to make your profile visible to other users</small>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Create Profile</button>
+                <button type="reset" class="btn btn-secondary">Reset Form</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
